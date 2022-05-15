@@ -6,11 +6,11 @@ const instance = axios.create({
 });
 
 function fetchProducts() {
-    return instance.get(`/products`)
+    return instance.get(`/products`);
 }
 
 function fetchProductById(id) {
-    return instance.get(`/products/${id}`)
+    return instance.get(`/products/${id}`);
 }
 
 function fetchProductsByKeyword(keyword) {
@@ -18,16 +18,16 @@ function fetchProductsByKeyword(keyword) {
         params: {
             name_like: keyword,
         },
-    })
+    });
 }
 
 // carts
 function fetchCartItems() {
-    return instance.get('/carts')
+    return instance.get('/carts');
 }
 
 function createCartItem(cartItem) {
-    return instance.post('/carts', cartItem)
+    return instance.post('/carts', cartItem);
 }
 
 export {

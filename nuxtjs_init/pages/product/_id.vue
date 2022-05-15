@@ -17,19 +17,18 @@
 </template>
 
 <script>
-import { createCartItem, fetchProductById } from '@/api/index';
+import { fetchProductById, createCartItem } from '@/api/index';
 
 export default {
     async asyncData({ params }) {
         const response = await fetchProductById(params.id)
-        return { product: response.data }
+        return { product: response.data };
     },
-
     methods: {
         async addToCart() {
-            await createCartItem(this.product)
-            this.$store.commit('addItemToCart', this.product)
-            this.$router.push('/cart')
+            await createCartItem(this.product);
+            this.$store.dispatch('addItemToCart', this.product);
+            this.$router.push('/cart');
         },
     },
 }
