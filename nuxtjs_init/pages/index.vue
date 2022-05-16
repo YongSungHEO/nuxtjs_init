@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import { fetchProducts, fetchProductsByKeyword } from '@/api/index';
+import { fetchProducts } from '@/api/index';
 import SearchInput from '@/components/SearchInput.vue';
 
 export default {
@@ -50,7 +50,7 @@ export default {
             this.$router.push(`/product/${id}`);
         },
         async searchProducts() {
-            const response = await fetchProductsByKeyword(this.searchKeyword);
+            const response = await fetchProducts(this.searchKeyword);
             this.products = response.data.map(item => {
                 return {
                     ...item,
