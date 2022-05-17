@@ -1,15 +1,16 @@
 <template>
     <div>
-        <h1>
-            <NuxtLink to="/">Nuxt Init</NuxtLink>
-        </h1>
+        <AppHeader></AppHeader>
         <Nuxt></Nuxt>
     </div>
 </template>
 
 <script>
+import AppHeader from '@/components/AppHeader.vue';
+
 export default {
     name: 'DefaultLayout',
+    components: { AppHeader }
 }
 </script>
 
