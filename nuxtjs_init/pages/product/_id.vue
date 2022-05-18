@@ -24,6 +24,18 @@ export default {
         const response = await fetchProductById(params.id)
         return { product: response.data };
     },
+    head() {
+        return {
+            title: `Product Detail Page - ${this.product.name}`,
+            meta: [
+                {
+                    hid: 'description',
+                    name: 'description',
+                    content: 'Page Description Content',
+                },
+            ],
+        }
+    },
     methods: {
         async addToCart() {
             await createCartItem(this.product);
