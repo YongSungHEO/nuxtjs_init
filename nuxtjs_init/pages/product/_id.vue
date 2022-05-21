@@ -54,7 +54,7 @@ export default {
     methods: {
         async addToCart() {
             await createCartItem(this.product);
-            this.$store.dispatch('addItemToCart', this.product);
+            this.$store.dispatch('cart/addItemToCart', this.product);
             this.$router.push('/cart');
         },
     },

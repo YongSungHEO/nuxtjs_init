@@ -15,10 +15,10 @@
 <script>
 export default {
     async fetch() {
-        await this.$store.dispatch('fetchCarts');
+        await this.$store.dispatch('cart/fetchCarts');
     },
     computed: {
-        carts() { return this.$store.state.carts; },
+        carts() { return this.$store.state.cart.carts; },
     },
 }
 </script>
