@@ -13,12 +13,18 @@
 </template>
 
 <script>
+import { createNamespacedHelpers } from 'vuex';
+
+const { mapState } = createNamespacedHelpers('cart');
+
 export default {
     async fetch() {
         await this.$store.dispatch('cart/fetchCarts');
     },
     computed: {
-        carts() { return this.$store.state.cart.carts; },
+        ...mapState({
+            carts(state) { return state.carts; },
+        })
     },
 }
 </script>
