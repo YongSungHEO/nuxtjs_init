@@ -1,3 +1,5 @@
+import i18n from './assets/locales';
+
 export default {
     dev: process.env.NODE_ENV !== 'production',
     // Global page headers: https://go.nuxtjs.dev/config-head
@@ -31,7 +33,22 @@ export default {
     ],
 
     // Modules: https://go.nuxtjs.dev/config-modules
-    modules: [],
+    modules: [
+        [
+            '@nuxtjs/i18n',
+            {
+                locales: ['en', 'ko'],
+                defaultLocale: 'en',
+                vueI18n: {
+                    fallbackLocale: 'en',
+                    messages: {
+                        en: i18n.en,
+                        ko: i18n.ko,
+                    }
+                }
+            },
+        ]
+    ],
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
     build: {},
