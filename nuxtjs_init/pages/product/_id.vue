@@ -10,7 +10,7 @@
         <div class="product-d-sidePanel">
             <p class="name">{{ product.name }}</p>
             <p class="price">{{ product.price }}</p>
-            <button type="button" @click="addToCart">Add to Cart</button>
+            <button type="button" @click="addToCart">{{ $t('PRODUCT.ADD_TO_CART' )}}</button>
         </div>
     </div>
   </div>

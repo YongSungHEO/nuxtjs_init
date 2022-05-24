@@ -1,7 +1,7 @@
 <template>
   <div>
-        <h1>404 페이지</h1>
-        <p>페이지를 찾을 수 없습니다.</p>
+        <h1>{{ $t('ERROR.404_PAGE') }}</h1>
+        <p>{{ $t('ERROR.CANNOT_FIND_PAGE') }}</p>
     </div>
 </template>
 

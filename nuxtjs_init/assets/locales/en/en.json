@@ -1,5 +1,22 @@
 {
+    "ERROR": {
+        "404_PAGE": "404 Page",
+        "CANNOT_FIND_PAGE": "Cannot find page."
+    },
+    "INDEX": {
+        "GO_TO_CART": "Go To Cart"
+    },
     "APP_HEADER": {
         "TITLE": "Nuxt Init"
+    },
+    "CART": {
+        "ADDED_PRODUCT_LIST": "Added Product List",
+        "PURCHASE": "Purchase"
+    },
+    "PRODUCT": {
+        "ADD_TO_CART": "Add to Cart"
+    },
+    "SEARCH_INPUT": {
+        "SEARCH": "Search"
     }
 }

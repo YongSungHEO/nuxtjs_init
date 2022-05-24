@@ -1,5 +1,22 @@
 {
+    "ERROR": {
+        "404_PAGE": "404 페이지",
+        "CANNOT_FIND_PAGE": "페이지를 찾을 수 없습니다."
+    },
+    "INDEX": {
+        "GO_TO_CART": "장바구니 가기"
+    },
     "APP_HEADER": {
         "TITLE": "넉스트 시작"
+    },
+    "CART": {
+        "ADDED_PRODUCT_LIST": "담긴 상품 리스트",
+        "PURCHASE": "구매하기"
+    },
+    "PRODUCT": {
+        "ADD_TO_CART": "카트에 추가"
+    },
+    "SEARCH_INPUT": {
+        "SEARCH": "찾기"
     }
 }

@@ -8,7 +8,7 @@
         <button
             type="button"
             class="searchInput-b-search"
-            @click="$emit('search')">search
+            @click="$emit('search')">{{ $t('SEARCH_INPUT.SEARCH') }}
         </button>
     </div>
 </template>

@@ -1,9 +1,9 @@
 <template>
     <div class="cart-d-container">
-        <h1 class="cart-d-title">담긴 상품 목록</h1>
+        <h1 class="cart-d-title">{{ $t('CART.ADDED_PRODUCT_LIST') }}</h1>
         <CartList></CartList>
         <div class="cart-d-extraPanel">
-            <button>구매하기</button>
+            <button>{{ $t('CART.PURCHASE') }}</button>
         </div>
     </div>
 </template>

@@ -18,7 +18,7 @@
             </li>
         </ul>
         <div class="index-d-cartWrapper">
-            <button class="index-btn-toCart" @click="routeToCartPage">장바구니 바로가기</button>
+            <button class="index-btn-toCart" @click="routeToCartPage">{{ $t('INDEX.GO_TO_CART') }}</button>
         </div>
     </div>
 </template>

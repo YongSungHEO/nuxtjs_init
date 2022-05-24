@@ -1,7 +1,7 @@
 <template>
     <div>
         <header class="title AppHeader-h-header">
-            <NuxtLink to="/" class="AppHeader-nuxtLink-logo">Nuxt Init</NuxtLink>
+            <NuxtLink to="/" class="AppHeader-nuxtLink-logo">{{ $t('APP_HEADER.TITLE') }}</NuxtLink>
         </header>
     </div>
 </template>
