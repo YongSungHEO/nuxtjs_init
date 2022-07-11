@@ -75,3 +75,23 @@ Write global CSS file and declare to `nuxt.config.js` file.
 # Add global CSS declartion.
 css: ['@/assets/css/reset.css']
 ```
+
+```bash
+# i18n for multiple language.
+modules: [
+    [
+        '@nuxtjs/i18n',
+        {
+            locales: ['en', 'ko'],
+            defaultLocale: 'en',
+            vueI18n: {
+                fallbackLocale: 'en',
+                messages: {
+                    en: i18n.en,
+                    ko: i18n.ko,
+                }
+            }
+        },
+    ]
+]
+```
