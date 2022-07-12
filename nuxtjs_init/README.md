@@ -95,3 +95,20 @@ modules: [
     ]
 ]
 ```
+
+## OG Tag
+
+Set meta data with OG tag.
+
+```bash
+# pages/product/_id.vue
+
+head() {
+    return {
+        title: `Title`,
+        meta: [
+            # Set description, og:title, og:description, og:image...
+        ]
+    }
+}
+```
